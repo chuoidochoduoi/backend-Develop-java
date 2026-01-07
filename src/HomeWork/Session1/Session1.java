@@ -1,4 +1,4 @@
-package HomeWork;
+package HomeWork.Session1;
 
 public class Session1 {
 
