@@ -46,5 +46,63 @@ public class Main {
 //        S2Bai3 s2Bai3 = new S2Bai3();
 //        s2Bai3.CalAll(3974);
 
+    boolean flag = true;
+    while (flag) {
+        System.out.println("1. Tinhs giai thừa n\n" +
+                "2.tinh tong n dau tien \n" +
+                "3.tim cac uoc cua n \n" +
+                "4.thoat");
+
+
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+        switch (choice) {
+            case 1:
+                int n1 = scanner.nextInt();
+
+
+
+                int count =1;
+                for (int i=1;i<=n1;i++) {
+
+                    count *= i;
+                }
+                System.out.println("tong la"+count);
+
+             break;
+             case 2:
+                 int n2 = scanner.nextInt();
+
+                 int count2 =0;
+                 for(int i=0;i<=n2;i++){
+                     count2+= i;
+                 }
+                 System.out.println("tong la"+count2);
+
+                 break;
+                 case 3:
+                     System.out.println("cac uoc la");
+
+                     int n3 = scanner.nextInt();
+
+                     System.out.println("cac uoc la");
+                     for (int i=1;i<=n3;i++){
+                         if (n3%i==0){
+                             System.out.println(i);
+                         }
+                     }
+                     break;
+                     case 4:
+                         flag = false;
+                         break;
+
+        }
+
+
+    }
+
+
+
+
     }
 }
