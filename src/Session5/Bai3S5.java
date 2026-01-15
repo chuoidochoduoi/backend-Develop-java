@@ -1,0 +1,21 @@
+package Session5;
+
+import java.util.Scanner;
+
+public class Bai3S5 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhập mật khẩu: ");
+        String password = sc.nextLine();
+
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@#$!%]).{8,}$";
+
+        if (password.matches(regex)) {
+            System.out.println("Mật khẩu hợp lệ");
+        } else {
+            System.out.println("Mật khẩu KHÔNG hợp lệ");
+        }
+
+    }
+}
